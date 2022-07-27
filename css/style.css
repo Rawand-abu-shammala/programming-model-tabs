@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(248, 214, 225);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+}
+
+.tabs li {
+    padding: 10px;
+    background-color: rgb(247, 248, 182);
+    color: #000;
+    margin: 5px;
+    cursor: pointer;
+    width: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tabs li.active,
+.tabs li:hover {
+    background-color: rgb(240, 97, 168);
+    color: rgb(194, 192, 193);
+    margin: 0;
+}
+
+.content {
+    background-color: rgb(240, 97, 168);
+    width: 400px;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content>div {
+    padding: 10px;
+    text-align: justify;
+    color: rgb(194, 192, 193);
+
+}
+
+.content>div:not(:first-child) {
+    display: none;
+}
+
+i {
+    font-size: 18px;
+}
